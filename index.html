@@ -1,0 +1,21 @@
+<html>
+
+<body>
+
+<button onclick="makeRequestWithUserGesture()">Play video</button>
+</body>
+
+<script>
+function makeRequestWithUserGesture() {
+  var promise = document.requestStorageAccess();
+  promise.then(
+    function (hasAccess) {
+      alert(hasAccess)
+    },
+    function (reason) {
+      alert(reason)
+    }
+  );
+}
+</script>
+</html>
