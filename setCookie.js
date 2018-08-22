@@ -1,4 +1,4 @@
-document.cookie = 'ITP_20180822=hoge';
+document.cookie = 'test=hoge';
 
 var r = document.cookie.split(';');
  
